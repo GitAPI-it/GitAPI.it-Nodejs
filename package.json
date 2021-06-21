@@ -5,16 +5,19 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "dist": "node dist/index.js",
-    "test": "jest"
+    "dist": "node dist/src/index.js",
+    "test": "npx jest"
   },
-  "main": "src/index.ts",
+  "main": "dist/src/index.js",
   "dependencies": {
     "@types/axios": "^0.14.0",
-    "http": "0.0.1-security"
+    "http": "0.0.1-security",
+    "typescript": "^4.3.4"
   },
   "devDependencies": {
     "@types/jest": "^26.0.23",
-    "@types/node": "^15.12.4"
+    "@types/node": "^15.12.4",
+    "jest": "^27.0.4",
+    "ts-jest": "^27.0.3"
   }
 }

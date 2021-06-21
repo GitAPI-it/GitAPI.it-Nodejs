@@ -1,1 +1,1 @@
-export { getUser } from './main/classes/user'
+export { getUser } from './main/classes/User'
