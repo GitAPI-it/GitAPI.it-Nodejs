@@ -1,0 +1,17 @@
+{
+  "name": "typescript_types",
+  "version": "0.0.0",
+  "author": "darkdarcool30",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "dist": "node dist/index.js"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "http": "0.0.1-security"
+  },
+  "devDependencies": {
+    "@types/node": "^15.12.4"
+  }
+}
