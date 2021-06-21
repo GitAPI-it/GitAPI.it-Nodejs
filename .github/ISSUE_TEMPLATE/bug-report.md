@@ -1,7 +1,7 @@
 ---
 name: Bug Report
 about: Submit a bug to have it checked
-title: "[BUG] ~ (Your bug name here!)"
+title: "[BUG] ~ "
 labels: 'Type: Bug'
 assignees: 'darkdarcool'
 ---
