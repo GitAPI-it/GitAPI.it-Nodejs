@@ -1,5 +1,5 @@
 ---
-name: Bug Report
+name: Bug submission
 about: Submit a bug to have it checked
 title: "[BUG] ~ "
 labels: 'Type: Bug'
