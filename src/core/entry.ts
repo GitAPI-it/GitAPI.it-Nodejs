@@ -1,0 +1,1 @@
+export { getUser } from './main/classes/user'

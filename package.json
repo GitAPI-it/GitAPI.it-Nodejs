@@ -1,17 +1,20 @@
 {
-  "name": "typescript_types",
-  "version": "0.0.0",
+  "name": "git_data-typescript",
+  "version": "0.0.1",
   "author": "darkdarcool30",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "dist": "node dist/index.js"
+    "dist": "node dist/index.js",
+    "test": "jest"
   },
+  "main": "src/index.ts",
   "dependencies": {
     "@types/axios": "^0.14.0",
     "http": "0.0.1-security"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.23",
     "@types/node": "^15.12.4"
   }
 }

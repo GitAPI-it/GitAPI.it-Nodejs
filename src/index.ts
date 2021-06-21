@@ -1,4 +1,5 @@
-import { getData } from "./utils/request";
+import { getUser } from "./core/entry";
 (async () => {
-  console.log(await getData("darkdarcool"))
+  var myData = await getUser("darkdarcool")
+  console.log(myData.login)
 })();
