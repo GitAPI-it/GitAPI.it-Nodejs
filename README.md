@@ -12,17 +12,17 @@
 <h4 align = "center"><a href = "https://github.com/darkdarcool/GitData-Typescript/issues">Open issue</a>  • <a href = "https://github.com/darkdarcool/GitData-Typescript/pulls">Open pull request</a></h4>
 
 <details>
-  <summary style = "display: inline-block"><h2 class = "fake-link">Table of contents</summary>
+  <summary style = "display: inline-block"><h2>Table of contents</summary>
   <br>
   <br>
   <li>
-    <a href = "about-the-module">About the module</a>
+    <a href = "#about-the-module">About the module</a>
     <ul>
-      • <a href = "built-with"> Built with </a>
+      • <a href = "#built-with"> Built with </a>
     </ul>
-    • <a href = "contributing">Contributing</a>
+    • <a href = "#contributing">Contributing</a>
     <br>
-    • <a href = "license">License</a>
+    • <a href = "#license">License</a>
   </li>
 </details>
 
