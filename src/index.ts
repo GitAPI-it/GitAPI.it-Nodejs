@@ -1,6 +1,7 @@
-import { getUser } from "./core/entry";
+import { getRepoById, id } from "./core/entry";
 
 (async () => {
-  var myData = await new getUser("darkdarcool").writeData();
-  
+  var input: id = 377859462;
+  var myData = await new getRepoById(input).readData();
+  console.log(myData)
 })();

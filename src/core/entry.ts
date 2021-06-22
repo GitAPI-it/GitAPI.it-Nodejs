@@ -1,1 +1,5 @@
 export { getUser } from './main/classes/User'
+export { repository } from './main/utils/type'
+export { getRepo } from './main/classes/Repo'
+export { getRepoById } from './main/classes/Repo'
+export { id } from './main/utils/type'
