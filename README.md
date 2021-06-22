@@ -2,14 +2,14 @@
 [![forks](https://img.shields.io/github/forks/darkdarcool/GitData-Typescript?style=for-the-badge)](https://github.com/darkdarcool/GitData-Typescript/fork)
 [![stars](https://img.shields.io/github/stars/darkdarcool/GitData-Typescript?logoColor=blue&style=for-the-badge)](https://github.com/darkdarcool/GitData-Typescript/stargazers)
 [![license](https://img.shields.io/github/license/darkdarcool/GitData-Typescript?color=blue&style=for-the-badge)](https://github.com/darkdarcool/GitData-Typescript/blob/master/LICENSE)
-> ⚠️ This is currently a work in progress and should ***not*** be put into code as none of the features you may see now and in the future are in the package.
+> ⚠️ This is currently a work in progress and should ***not*** be put into code as none of the features you may see now and in the future are in the package ⚠️ 
 
 <br />
 
 <h1 align = "center" style = "display: block"> GitData </h1>
 
-<h3 align = "center"><a href = "https://www.npmjs.com/package/git_data-typescript"> View NPM package »</a></h1>
-<h4 align = "center"><a href = "https://github.com/darkdarcool/GitData-Typescript/issues">Open issue</a>  • <a href = "https://github.com/darkdarcool/GitData-Typescript/pulls">Open pull request</a></h4>
+<h3 align = "center"><a href = "https://www.npmjs.com/package/gitapi.it"> View NPM package »</a></h1>
+<h4 align = "center"><a href = "https://github.com/darkdarcool/GitAPI.it/issues">Open issue</a>  • <a href = "https://github.com/darkdarcool/GitAPI.it/pulls">Open pull request</a></h4>
 
 <details>
   <summary style = "display: inline-block"><h2>Table of contents</summary>
@@ -49,13 +49,13 @@ Obviously, this is a module and we need instructions on how to use it, so the fo
 To import the module into npm, please do:
 
 ``` sh
-npm i git_data-typescript
+npm i gitapi.it
 ```
 
 And you will have succesfuly imported the package! Then in your typescript code:
 
 ``` javascript
-import * as git from 'git_data-typescript';
+import * as git from 'gitapi.it';
 ```
 
 ### Code usage
@@ -65,7 +65,7 @@ And you have the module in your code now! Now, let's move on to how to _use_ the
 Here is a sample on how to get simple data on a user:
 
 ```
-import * as git from 'git_data-typescript';
+import * as git from 'gitapi.it';
 async function getData() {
   let data = await git.getUser("yourGitUsernameHere").readData();
   console.log(data);

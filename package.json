@@ -8,7 +8,7 @@
     "dist": "node dist/src/index.js",
     "test": "npx jest"
   },
-  "main": "src/index.ts",
+  "main": "dist/src/index.js",
   "dependencies": {
     "@octokit/graphql": "^4.6.4",
     "@types/axios": "^0.14.0",
