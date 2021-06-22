@@ -1,7 +1,7 @@
-import { getRepoById, id } from "./core/entry";
+import { getUser } from "./core/entry";
 
 (async () => {
-  var input: id = 377859462;
-  var myData = await new getRepoById(input).readData();
-  console.log(myData)
+  var user = new getUser("yourToken", "darkdarcool");
+  var userdata = await user.readData();
+  console.log(userdata)
 })();

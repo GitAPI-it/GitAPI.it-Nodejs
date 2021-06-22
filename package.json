@@ -10,6 +10,7 @@
   },
   "main": "src/index.ts",
   "dependencies": {
+    "@octokit/graphql": "^4.6.4",
     "@types/axios": "^0.14.0",
     "http": "0.0.1-security",
     "typescript": "^4.3.4"

@@ -1,25 +1,17 @@
-import { getData } from "../utils/request";
-import * as fs from 'fs'
+import { makeQuery } from '../utils/query/query';
+import { user_default } from '../utils/query_list';
 export class getUser {
   name: string;
-  // var name = null
-  constructor(name: string) {
-    this.name = name
+  token: string;
+  constructor(token: string, username: string) {
+    this.name = username
+    this.token = token
   }
   async readData() {
-    var data = await getData(this.name);
-    data = JSON.stringify(data)
-    data = JSON.parse(data)
-    return data;
-  }
-  async writeData(path: string="./gitdata.json") {
-    var data = await getData(this.name)
-    data = JSON.stringify(data)
-    // data = JSON.parse(data)
-    try {
-      fs.writeFileSync(path, data);
-    } catch {
-      throw new Error("Error when writing data")
+    const body = {
+      query: user_default(`${this.name}`)
     }
+    var data = await makeQuery(this.token, body);
+    return data.data.user
   }
 }

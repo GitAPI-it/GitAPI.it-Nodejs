@@ -20,6 +20,12 @@
     <ul>
       • <a href = "#built-with"> Built with </a>
     </ul>
+    • <a href = "#usage"> Usage </a>
+    <ul>
+      • <a href = "#installation"> Installation </a>
+      <br>
+      • <a href = "#code-usage"> Code usage </a>
+    </ul>
     • <a href = "#contributing">Contributing</a>
     <br>
     • <a href = "#license">License</a>
@@ -34,6 +40,39 @@ This is an API that gets GitHub data on users, and so much about them! It allows
 
 This is built with [typescript](https://www.typescriptlang.org)
 
+## Usage
+
+Obviously, this is a module and we need instructions on how to use it, so the following is on how to use the module!
+
+### Installation 
+
+To import the module into npm, please do:
+
+``` sh
+npm i git_data-typescript
+```
+
+And you will have succesfuly imported the package! Then in your typescript code:
+
+``` javascript
+import * as git from 'git_data-typescript';
+```
+
+### Code usage
+
+And you have the module in your code now! Now, let's move on to how to _use_ the function in the module!
+
+Here is a sample on how to get simple data on a user:
+
+```
+import * as git from 'git_data-typescript';
+async function getData() {
+  let data = await git.getUser("yourGitUsernameHere").readData();
+  console.log(data);
+}
+```
+
+And then you should see basic(non-sensitive) user data that you can use! But that's not all. We also have a function that allows you to write the data to a file that can be read by _ANY_ other language!
 ## Contributing
 
 Contributing is welcome here! If you feel like contributing, please read our [contributing](#) guide!

@@ -9,6 +9,7 @@
 	  "strict": true,
 	  "esModuleInterop": true,
 	  "inlineSourceMap": true,
-	  "noImplicitAny": false
+	  "noImplicitAny": false,
+    "allowJs": true
 	},
 }
