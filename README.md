@@ -2,6 +2,7 @@
 [![forks](https://img.shields.io/github/forks/darkdarcool/GitData-Typescript?style=for-the-badge)](https://github.com/darkdarcool/GitData-Typescript/fork)
 [![stars](https://img.shields.io/github/stars/darkdarcool/GitData-Typescript?logoColor=blue&style=for-the-badge)](https://github.com/darkdarcool/GitData-Typescript/stargazers)
 [![license](https://img.shields.io/github/license/darkdarcool/GitData-Typescript?color=blue&style=for-the-badge)](https://github.com/darkdarcool/GitData-Typescript/blob/master/LICENSE)
+[![downloads](https://img.shields.io/npm/dw/gitapi.it?style=for-the-badge)](https://www.npmjs.com/package/gitapi.it)
 > ⚠️ This is currently a work in progress and should ***not*** be put into code as none of the features you may see now and in the future are in the package ⚠️ 
 
 <br />
@@ -75,7 +76,7 @@ async function getData() {
 And then you should see basic(non-sensitive) user data that you can use! But that's not all. We also have a function that allows you to write the data to a file that can be read by _ANY_ other language!
 ## Contributing
 
-Contributing is welcome here! If you feel like contributing, please read our [contributing](#) guide!
+Contributing is welcome here! If you feel like contributing, please read our [contributing](https://github.com/darkdarcool/GitAPI.it/blob/master/.github/CONTRIBUTING.md) guide!
 
 ## License
 
