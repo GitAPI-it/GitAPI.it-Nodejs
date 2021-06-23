@@ -76,7 +76,7 @@ async function getData() {
 And then you should see basic(non-sensitive) user data that you can use! But that's not all. We also have a function that allows you to write the data to a file that can be read by _ANY_ other language!
 ## Contributing
 
-Contributing is welcome here! If you feel like contributing, please read our [contributing](#) guide!
+Contributing is welcome here! If you feel like contributing, please read our [contributing](https://github.com/darkdarcool/GitAPI.it/blob/master/.github/CONTRIBUTING.md) guide!
 
 ## License
 
