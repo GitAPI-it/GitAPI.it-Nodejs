@@ -10,15 +10,13 @@ export async function makeQuery(token, requester, structure, userData) {
     "Content-Type": "application/json",
     Authorization: "bearer " + githubData["token"],
   };
-  var username = userData
+  userData = JSON.stringify(userData)
   var info = await fetch(baseURL, {
     method: 'POST',
     headers,
     body: JSON.stringify({
       query: body,
-      variables: JSON.stringify({
-        username,
-      }),
+      variables: userData,
     }),
   });
   var json = await info.json()
@@ -29,7 +27,7 @@ export async function makeQuery(token, requester, structure, userData) {
   }
   if (json.errors) {
     throw new Error(`
-      ${username} is not a valid user. Please input a valid user
+      ${userData} is not a valid user. Please input a valid user
     `)
   }
   return json

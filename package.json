@@ -2,13 +2,7 @@
   "name": "gitapi.it",
   "version": "0.0.1",
   "author": "darkdarcool30",
-  "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc --watch",
-    "dist": "node dist/src/index.js",
-    "test": "npx jest"
-  },
-  "main": "dist/src/index.js",
+  "main": "./src/index.js",
   "dependencies": {
     "@octokit/graphql": "^4.6.4",
     "@types/axios": "^0.14.0",
