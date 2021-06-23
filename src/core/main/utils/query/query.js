@@ -1,6 +1,5 @@
 import fetch from 'node-fetch'
-import { exit } from 'process';
-export async function makeQuery(token: string, requester: string, structure: string, userData: string) {
+export async function makeQuery(token, requester, structure, userData) {
   const githubData = {
     token: token,
     username: `${requester}`
@@ -23,7 +22,6 @@ export async function makeQuery(token: string, requester: string, structure: str
     }),
   });
   var json = await info.json()
-  console.log(json)
   if (json.message) {
     throw new Error(`
       Invalid token. Please input a valid token

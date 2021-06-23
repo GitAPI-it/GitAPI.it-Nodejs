@@ -15,6 +15,7 @@
     "http": "0.0.1-security",
     "typescript": "^4.3.4"
   },
+  "type": "module",
   "devDependencies": {
     "@types/jest": "^26.0.23",
     "@types/node": "^15.12.4",
