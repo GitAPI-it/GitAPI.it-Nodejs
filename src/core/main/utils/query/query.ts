@@ -1,36 +1,38 @@
 import fetch from 'node-fetch'
-export async function makeQuery(token: string, structure: object) {
+import { exit } from 'process';
+export async function makeQuery(token: string, requester: string, structure: string, userData: string) {
   const githubData = {
     token: token,
-    username: "darkarcool"
+    username: `${requester}`
   }
-
-  /*const body = {
-    query: `
-      query {
-        user(login: "darkdarcool") {
-          bio
-        }
-      }
-    `
-  }
-  */
   const body = structure
   const baseURL = "https://api.github.com/graphql"
-
   const headers = {
     "Content-Type": "application/json",
     Authorization: "bearer " + githubData["token"],
   };
-  var response = await fetch(baseURL, {
-    method: "POST",
-    headers: headers,
-    body: JSON.stringify(body)
-  })/*.then((response) => response.text())
-.then((txt) => {
-  console.log(txt)
-})
-*/
-  var json = await response.json()
+  var username = userData
+  var info = await fetch(baseURL, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify({
+      query: body,
+      variables: JSON.stringify({
+        username,
+      }),
+    }),
+  });
+  var json = await info.json()
+  console.log(json)
+  if (json.message) {
+    throw new Error(`
+      Invalid token. Please input a valid token
+    `)
+  }
+  if (json.errors) {
+    throw new Error(`
+      ${username} is not a valid user. Please input a valid user
+    `)
+  }
   return json
 }

@@ -1,17 +1,16 @@
 import { makeQuery } from '../utils/query/query';
-import { user_default } from '../utils/query_list';
+import { defualtUser } from '../utils/query_list';
 export class getUser {
-  name: string;
+  requester: string;
   token: string;
   constructor(token: string, username: string) {
-    this.name = username
+    this.requester = username
     this.token = token
   }
-  async readData() {
-    const body = {
-      query: user_default(`${this.name}`)
-    }
-    var data = await makeQuery(this.token, body);
-    return data.data.user
+  async readData(requestee: string) {
+    const body = `${defualtUser}`
+    var variables = requestee
+    var data = await makeQuery(this.token, this.requester, body, variables);
+    return data.data
   }
 }
