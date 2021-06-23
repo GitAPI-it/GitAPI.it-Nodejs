@@ -61,19 +61,8 @@ import * as git from 'gitapi.it';
 
 ### Code usage
 
-And you have the module in your code now! Now, let's move on to how to _use_ the function in the module!
+To see how to use this module, please visit our [Usage](https://github.com/darkdarcool/GitAPI.it/blob/master/.github/USAGE.md) documents to see how! 
 
-Here is a sample on how to get simple data on a user:
-
-```
-import * as git from 'gitapi.it';
-async function getData() {
-  let data = await git.getUser("yourGitUsernameHere").readData();
-  console.log(data);
-}
-```
-
-And then you should see basic(non-sensitive) user data that you can use! But that's not all. We also have a function that allows you to write the data to a file that can be read by _ANY_ other language!
 ## Contributing
 
 Contributing is welcome here! If you feel like contributing, please read our [contributing](https://github.com/darkdarcool/GitAPI.it/blob/master/.github/CONTRIBUTING.md) guide!
