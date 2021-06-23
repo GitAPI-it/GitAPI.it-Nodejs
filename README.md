@@ -39,7 +39,7 @@ This is an API that gets GitHub data on users, and so much about them! It allows
 
 ###  Built with 
 
-This is built with [typescript](https://www.typescriptlang.org)
+This is built with [nodejs](https://nodejs.dev)
 
 ## Usage
 
