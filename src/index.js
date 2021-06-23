@@ -1,7 +1,11 @@
-import { getUser } from "./core/entry.js";
-
-(async () => {
-  var user = new getUser("", "darkdarcool");
-  var userdata = await user.getSmallGraphqlData("darkdarcool", 10);
-  console.log(userdata)
-})();
+import { GITAPI } from "./core/entry.js";
+var gitapi = GITAPI({
+  token: process.env['token'],
+  requester: "darkdarcool"
+});
+const user = new gitapi.User("darkdarcool");
+async function getBio() {
+  var userData = await user.getAllGraphqlFollowerData(10);
+  console.log(userData);
+}
+getBio()
