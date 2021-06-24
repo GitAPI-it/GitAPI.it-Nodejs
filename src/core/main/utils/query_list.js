@@ -13,7 +13,7 @@ query defualtUserData($username: String!) {
   
   }
 }
-`
+`;
 export const defualtUserFollowData = `
 query defualtUserData($username: String!, $followerCount: Int!, $followingCount: Int!) {
   user(login: $username) {
@@ -29,7 +29,7 @@ query defualtUserData($username: String!, $followerCount: Int!, $followingCount:
     }
   }
 }
-`
+`;
 
 export const defaultSimplifiedLargeUserData = `
 query defualtUserData($username: String!) {
@@ -47,7 +47,7 @@ query defualtUserData($username: String!) {
     pinnedItems:anyPinnableItems
   }
 }
-`
+`;
 export const defaultUnsimplifiedLargeUserData = `
 query defualtUserData($username: String!) {
   user(login: $username) {
@@ -64,4 +64,4 @@ query defualtUserData($username: String!) {
     anyPinnableItems
   }
 }
-`
+`;

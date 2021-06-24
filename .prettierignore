@@ -1,0 +1,12 @@
+dist 
+rollup
+.vscode 
+.github 
+.replit 
+.gitignore 
+LICENSE.md 
+README.md 
+package.json 
+package-lock.json
+.upm
+.prettierrc.json

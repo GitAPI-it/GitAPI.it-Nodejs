@@ -2,25 +2,30 @@
   "name": "gitapi.it",
   "version": "0.0.1",
   "author": "darkdarcool30",
-  "main": "./dist/cjs/gitapi-it.js",
-  "module": "",
+  "main": "./dist/cjs/gitapi-it.cjs",
+  "module": "./dict/mjs/gitapi-it.mjs",
   "dependencies": {
-    "@octokit/graphql": "^4.6.4",
-    "@types/axios": "^0.14.0",
     "axios": "^0.21.1",
-    "http": "0.0.1-security",
-    "node-fetch": "^2.6.1",
-    "typescript": "^4.3.4"
+    "chalk": "^4.1.1",
+    "node-fetch": "^2.6.1"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/gitapi-it.mjs",
+      "require": "./dist/gitapi-it.cjs",
+      "default": "./dist/gitapi-it.cjs"
+    },
+    "./module": "./dist/gitapi-it.mjs",
+    "./common": "./dist/replapi-it.cjs"
   },
   "scripts": {
-    "build": "npx rollup --config rollup/cjs.config.js && npx rollup --config rollup/esm.config.js"
+    "build": "npx rollup --config rollup/cjs.config.js && npx rollup --config rollup/esm.config.js",
+    "format": "npx prettier --write .",
+    "postinstall": "node .scripts/postinstall.js"
   },
   "type": "module",
   "devDependencies": {
-    "@types/jest": "^26.0.23",
-    "@types/node": "^15.12.4",
-    "jest": "^27.0.5",
-    "rollup": "^2.52.2",
-    "ts-jest": "^27.0.3"
+    "prettier": "2.3.1",
+    "rollup": "^2.52.2"
   }
 }
