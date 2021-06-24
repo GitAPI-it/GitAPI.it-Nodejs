@@ -22,7 +22,7 @@ export async function makeQuery(token, requester, structure, userData) {
   var json = await info.json()
   if (json.message) {
     throw new Error(`
-      Invalid token. Please input a valid token
+      Provided token is invalid. Please input a valid token
     `)
   }
   if (json.errors) {

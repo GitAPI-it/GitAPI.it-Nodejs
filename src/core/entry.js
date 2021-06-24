@@ -1,16 +1,26 @@
-import { User } from './main/classes/User.js'
+import User from './main/classes/User.js'
 var tokenVar;
-var requesterVar
-export function GITAPI({token, requester}) {
+var requesterVar;
+var canSimplify;
+import checkUser from './main/utils/credentials/checkCredentials.js'
+export default function GITAPI({token, requester, simplify}) {
   tokenVar = token
-  var requesterVar = requester
+  requesterVar = requester;
+  if (typeof simplify !== 'boolean') {
+    throw new Error("Invalid option for simplifying")
+  }
+  canSimplify = simplify
+  checkUser({user: requester, token: token})
   return {
     User
   }
 }
 export function getToken() {
-  return tokenVar
+  return tokenVar;
 }
 export function getRequester() {
-  return requesterVar
+  return requesterVar;
+}
+export function getSimplify() {
+  return canSimplify;
 }

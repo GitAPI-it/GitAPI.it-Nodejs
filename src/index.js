@@ -1,11 +1,13 @@
-import { GITAPI } from "./core/entry.js";
+import GITAPI from "./core/entry.js";
+
 var gitapi = GITAPI({
   token: process.env['token'],
-  requester: "darkdarcool"
+  requester: "darkdarcool",
+  simplify: true
 });
-const user = new gitapi.User("darkdarcool");
+var jbData = new gitapi.User("amazon");
 async function getBio() {
-  var userData = await user.getAllGraphqlFollowerData(10);
-  console.log(userData);
+  var jbBio = await jbData.getLargeGraphqlData();
+  console.log(jbBio);
 }
 getBio()
