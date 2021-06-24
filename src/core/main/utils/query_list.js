@@ -40,6 +40,7 @@ query defualtUserData($username: String!) {
     accountCreatedAt:createdAt
     isAdmin:isSiteAdmin
     location
+    name
     twitterUsername
     isDevMember:isDeveloperProgramMember
     userId:databaseId
@@ -55,6 +56,7 @@ query defualtUserData($username: String!) {
     avatarUrl
     createdAt
     isSiteAdmin
+    name
     location
     twitterUsername
     isDevMember:isDeveloperProgramMember
