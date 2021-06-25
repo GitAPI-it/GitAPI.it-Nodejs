@@ -10,7 +10,6 @@ query defualtUserData($username: String!) {
     location
     twitterUsername
     isDeveloperProgramMember
-  
   }
 }
 `;
@@ -45,6 +44,14 @@ query defualtUserData($username: String!) {
     isDevMember:isDeveloperProgramMember
     userId:databaseId
     pinnedItems:anyPinnableItems
+    company
+    status {
+      gitEmoji:emoji
+      lastUpdated:updatedAt
+      message
+      id
+      expires:expiresAt
+    }
   }
 }
 `;
@@ -59,9 +66,17 @@ query defualtUserData($username: String!) {
     name
     location
     twitterUsername
-    isDevMember:isDeveloperProgramMember
+    isDevMember: isDeveloperProgramMember
     databaseId
     anyPinnableItems
+    company
+    status {
+      emoji
+      updatedAt
+      message
+      id
+      expiresAt
+    }
   }
 }
 `;

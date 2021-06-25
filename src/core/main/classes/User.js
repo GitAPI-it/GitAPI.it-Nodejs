@@ -3,6 +3,7 @@ import * as constants from "../utils/query_list.js";
 import { getToken } from "../../entry.js";
 import { getRequester } from "../../entry.js";
 import { getSimplify } from "../../entry.js";
+import emoji from 'github-emoji'
 export default class User {
   constructor(username) {
     if (!username) {

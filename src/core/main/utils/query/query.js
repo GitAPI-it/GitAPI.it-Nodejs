@@ -1,4 +1,5 @@
 import fetch from "node-fetch";
+import fs from 'fs'
 export async function makeQuery(token, requester, structure, userData) {
   const githubData = {
     token: token,
@@ -11,6 +12,15 @@ export async function makeQuery(token, requester, structure, userData) {
     Authorization: "bearer " + githubData["token"],
   };
   userData = JSON.stringify(userData);
+  var stuff = {
+    method: "POST",
+    headers,
+    body: JSON.stringify({
+      query: body,
+      variables: userData,
+    })
+  }
+  console.log(stuff)
   var info = await fetch(baseURL, {
     method: "POST",
     headers,

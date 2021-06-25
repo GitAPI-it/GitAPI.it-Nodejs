@@ -1,7 +1,7 @@
 export default {  
   input: './src/core/entry.js',
   output: {
-    file: './dist/cjs/gitapi-it.cjs',
+    file: './dist/gitapi-it.cjs',
     format: 'cjs'
   }
 }
