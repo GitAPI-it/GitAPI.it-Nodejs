@@ -11,20 +11,12 @@ export default class User {
     }
     this.username = username;
   }
-  async getSmallGraphqlData() {
-    const body = `${constants.defualtSmallUserData}`;
-    var variables = {
-      username: this.username,
-    };
-    var data = await makeQuery(getToken(), getRequester(), body, variables);
-    return data.data.user;
-  }
-  async getLargeGraphqlData() {
+  async userGraphQLDataFull() {
     var body;
     if (getSimplify() == true) {
-      body = `${constants.defaultSimplifiedLargeUserData}`;
+      body = `${constants.defaultSimplifiedUserData}`;
     } else {
-      body = `${constants.defaultUnsimplifiedLargeUserData}`;
+      body = `${constants.defaultUnsimplifiedUserData}`;
     }
     var variables = {
       username: this.username,
@@ -32,10 +24,17 @@ export default class User {
     var data = await makeQuery(getToken(), getRequester(), body, variables);
     return data.data.user;
   }
-  async getAllGraphqlFollowerData({ followerCount, followingCount }) {
+  async userFollowGraphQLData({ followerCount, followingCount }) {
+    var body
     if (!followerCount) followerCount = 10;
     if (!followingCount) followingCount = 10;
-    const body = `${constants.defualtUserFollowData}`;
+    if (getSimplify() == true) {
+      body = `${constants.defualtSimplifiedUserFollowData}`;
+    }
+    else {
+      body = `${constants.defualtUnsimplifiedUserFollowData}`
+    }
+
     var variables = {
       username: this.username,
       followerCount: followerCount,

@@ -1,19 +1,4 @@
-export const defualtSmallUserData = `
-query defualtUserData($username: String!) {
-  user(login: $username) {
-    bio
-    name
-    email
-    avatarUrl
-    createdAt
-    isSiteAdmin
-    location
-    twitterUsername
-    isDeveloperProgramMember
-  }
-}
-`;
-export const defualtUserFollowData = `
+export const defualtSimplifiedUserFollowData = `
 query defualtUserData($username: String!, $followerCount: Int!, $followingCount: Int!) {
   user(login: $username) {
   	followers(first: $followerCount) {
@@ -29,8 +14,23 @@ query defualtUserData($username: String!, $followerCount: Int!, $followingCount:
   }
 }
 `;
-
-export const defaultSimplifiedLargeUserData = `
+export const defualtUnsimplifiedUserFollowData = `
+query defualtUserData($username: String!, $followerCount: Int!, $followingCount: Int!) {
+  user(login: $username) {
+  	followers(first: $followerCount) {
+      nodes {
+        login
+      }
+    }
+    following(first: $followingCount) {
+      nodes {
+        login
+      }
+    }
+  }
+}
+`;
+export const defaultSimplifiedUserData = `
 query defualtUserData($username: String!) {
   user(login: $username) {
     bio
@@ -55,7 +55,7 @@ query defualtUserData($username: String!) {
   }
 }
 `;
-export const defaultUnsimplifiedLargeUserData = `
+export const defaultUnsimplifiedUserData = `
 query defualtUserData($username: String!) {
   user(login: $username) {
     bio

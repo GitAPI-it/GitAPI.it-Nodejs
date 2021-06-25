@@ -1,5 +1,4 @@
 import User from "./main/classes/User.js";
-import checkUser from "./main/utils/credentials/checkCredentials.js";
 var tokenVar;
 var requesterVar;
 var canSimplify;
@@ -10,7 +9,6 @@ export default function GITAPI({ token, requester, simplify }) {
     throw new Error("Invalid option for simplifying");
   }
   canSimplify = simplify;
-  checkUser({ user: requester, token: token });
   return {
     User,
   };
