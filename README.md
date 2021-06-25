@@ -1,4 +1,4 @@
-[![issues](https://img.shields.io/github/issues/darkdarcool/GitData-Typescript?logoColor=blue&style=for-the-badge)](https://github.com/darkdarcool/GitData-Typescript/issues)
+[![issues](https://img.shields.io/github/issues/GitAPI-it/GitAPI-Nodejs?logoColor=blue&style=for-the-badge)](https://github.com/darkdarcool/GitData-Typescript/issues)
 [![forks](https://img.shields.io/github/forks/darkdarcool/GitData-Typescript?style=for-the-badge)](https://github.com/darkdarcool/GitData-Typescript/fork)
 [![stars](https://img.shields.io/github/stars/darkdarcool/GitData-Typescript?logoColor=blue&style=for-the-badge)](https://github.com/darkdarcool/GitData-Typescript/stargazers)
 [![license](https://img.shields.io/github/license/darkdarcool/GitData-Typescript?color=blue&style=for-the-badge)](https://github.com/darkdarcool/GitData-Typescript/blob/master/LICENSE)
