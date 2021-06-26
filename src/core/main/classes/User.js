@@ -3,7 +3,7 @@ import * as constants from "../utils/query_list.js";
 import { getToken } from "../../entry.js";
 import { getRequester } from "../../entry.js";
 import { getSimplify } from "../../entry.js";
-import emoji from 'github-emoji'
+import axios from 'axios';
 export default class User {
   constructor(username) {
     if (!username) {
@@ -42,5 +42,9 @@ export default class User {
     };
     var data = await makeQuery(getToken(), getRequester(), body, variables);
     return data.data.user;
+  }
+  async userRestfulData() {
+    let data = await axios.get('https://api.github.com/users/' + this.username);
+    return data;
   }
 }

@@ -1,4 +1,5 @@
 import User from "./main/classes/User.js";
+import customQuery from './main/classes/Custom.js'
 var tokenVar;
 var requesterVar;
 var canSimplify;
@@ -11,6 +12,7 @@ export default function GITAPI({ token, requester, simplify }) {
   canSimplify = simplify;
   return {
     User,
+    customQuery
   };
 }
 export function getToken() {
