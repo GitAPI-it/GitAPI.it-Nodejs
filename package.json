@@ -22,7 +22,8 @@
   "scripts": {
     "build": "npx rollup --config rollup/cjs.config.js && npx rollup --config rollup/esm.config.js",
     "format": "npx prettier --write .",
-    "postinstall": "node .scripts/postinstall.js"
+    "postinstall": "node .scripts/postinstall.js",
+    "test": "echo let's fix this later"
   },
   "type": "module",
   "devDependencies": {
