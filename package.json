@@ -28,6 +28,6 @@
   "type": "module",
   "devDependencies": {
     "prettier": "2.3.2",
-    "rollup": "^2.52.3"
+    "rollup": "^2.52.6"
   }
 }
