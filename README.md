@@ -9,7 +9,7 @@
 <h1 align = "center" style = "display: block"> GitData </h1>
 
 <h3 align = "center"><a href = "https://www.npmjs.com/package/gitapi.it"> View NPM package »</a></h1>
-<h4 align = "center"><a href = "https://github.com/darkdarcool/GitAPI.it/issues">Open issue</a>  • <a href = "https://github.com/darkdarcool/GitAPI.it/pulls">Open pull request</a></h4>
+<h4 align = "center"><a href = "https://github.com/GitAPI-it/GitAPI.it-Nodejs/issues">Open issue</a>  • <a href = "https://github.com/GitAPI-it/GitAPI.it-Nodejs/pulls">Open pull request</a></h4>
 
 <details>
   <summary style = "display: inline-block"><h2>Table of contents</summary>
