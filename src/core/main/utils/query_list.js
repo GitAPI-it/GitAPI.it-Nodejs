@@ -80,3 +80,47 @@ query defualtUserData($username: String!) {
   }
 }
 `;
+
+export const defaultUnsimplifiedRepoData = `
+query getRepoData($name:String! $owner: String!) {
+  repository(name: $name owner: $owner) {
+    name 
+    id 
+    description 
+    homepageUrl
+    isEmpty 
+    isArchived 
+    isDisabled 
+    isLocked
+    stargazerCount
+    isPrivate 
+    databaseId 
+    createdAt
+    primaryLanguage {
+      name
+    }
+  }
+}
+`
+
+export const defaultSimplifiedRepoData = `
+query getRepoData($name:String! $owner: String!) {
+  repository(name: $name owner: $owner) {
+    name 
+    id 
+    description 
+    homepageUrl
+    isEmpty 
+    isArchived 
+    isDisabled 
+    isLocked
+    stargazerCount
+    isPrivate 
+    databaseId 
+    created:createdAt
+    primaryLang:primaryLanguage {
+      lang:name
+    }
+  }
+}
+`

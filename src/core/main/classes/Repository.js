@@ -1,14 +1,24 @@
 import { makeQuery } from "../utils/query/query.js";
 import * as constants from "../utils/query_list.js";
-import { getToken } from "../../entry.js";
-import { getRequester } from "../../entry.js";
-import { getSimplify } from "../../entry.js";
-// import axios from 'axios';
+import { getToken, getRequester, getSimplify } from "../../entry.js";
 export default class Repo {
-  constructor(id) {
-    this.id = id
+  constructor({owner, name}) {
+    this.owner = owner; 
+    this.name = name;
   }
-  async function repoGraphQLDataFull() {
-    
+  async repoGraphQLDataFull() {
+    var body;
+    if (getSimplify() == true) {
+      body = constants.defaultSimplifiedRepoData;
+    }
+    else {
+      body = constants.defaultUnsimplifiedRepoData;
+    }
+    var variables = {
+      owner: this.owner,
+      name: this.name
+    }
+    var data = await makeQuery(getToken(), getRequester(), body, variables);
+    return data.data.repository
   }
 }

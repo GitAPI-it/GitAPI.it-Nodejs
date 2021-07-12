@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+import fetch from 'node-fetch'
 export async function makeQuery(token, requester, structure, userData) {
   const githubData = {
     token: token,
@@ -27,7 +27,7 @@ export async function makeQuery(token, requester, structure, userData) {
   }
   if (json.errors) {
     throw new Error(`
-      We encountered an error! Error: ${json.errors}
+      We encountered an error! Error: ${json.errors[0].message}
     `);
   }
   return json;
