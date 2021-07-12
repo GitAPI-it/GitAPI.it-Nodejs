@@ -21,4 +21,8 @@ export default class Repo {
     var data = await makeQuery(getToken(), getRequester(), body, variables);
     return data.data.repository
   }
+  async restfulDataFull() {
+    let data = await axios.get('https://api.github.com/repos/' + this.username + "/" + this.name);
+    return data;
+  }
 }

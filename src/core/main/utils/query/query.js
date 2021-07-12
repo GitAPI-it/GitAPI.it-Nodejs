@@ -1,4 +1,3 @@
-import fetch from 'node-fetch'
 export async function makeQuery(token, requester, structure, userData) {
   const githubData = {
     token: token,
