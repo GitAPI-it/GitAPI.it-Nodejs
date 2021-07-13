@@ -1,6 +1,6 @@
 [![issues](https://img.shields.io/github/issues/GitAPI-it/GitAPI.it-Nodejs?style=for-the-badge)](https://github.com/darkdarcool/GitData-Typescript/issues)
 [![forks](https://img.shields.io/github/forks/GitAPI-it/GitAPI.it-Nodejs?style=for-the-badge)](https://github.com/darkdarcool/GitData-Typescript/fork)
-[![stars](https://img.shields.io/github/stars/GitAPI-it/GitData-Nodejs?logoColor=blue&style=for-the-badge)](https://github.com/darkdarcool/GitData-Typescript/stargazers)
+[![stars](https://img.shields.io/github/stars/GitAPI-it/GitAPI.it-Nodejs?logoColor=blue&style=for-the-badge)](https://github.com/darkdarcool/GitData-Typescript/stargazers)
 [![downloads](https://img.shields.io/npm/dw/gitapi.it?style=for-the-badge)](https://www.npmjs.com/package/gitapi.it)
 > ⚠️ This is currently a work in progress and should ***not*** be put into code as none of the features you may see now and in the future are in the package ⚠️ 
 
