@@ -60,12 +60,12 @@ import * as git from 'gitapi.it';
 
 ### Code usage
 
-To see how to use this module, please visit our [Usage](https://github.com/darkdarcool/GitAPI.it/blob/master/.github/USAGE.md) documents to see how! 
+To see how to use this module, please visit our [Usage](https://github.com/GitAPI-it/GitAPI.it-Nodejs/tree/main/.github/USAGE.md) documents to see how! 
 
 ## Contributing
 
-Contributing is welcome here! If you feel like contributing, please read our [contributing](https://github.com/darkdarcool/GitAPI.it/blob/master/.github/CONTRIBUTING.md) guide!
+Contributing is welcome here! If you feel like contributing, please read our [contributing](https://github.com/GitAPI-it/GitAPI.it-Nodejs/tree/main/.github/CONTRIBUTING.md) guide!
 
 ## License
 
-This is a module that is currently under the [MIT](https://en.wikipedia.org/wiki/MIT_License) license, see the [license](https://github.com/darkdarcool/GitData-Typescript/blob/master/LICENSE) page for more information on how the MIT license is used here.
+This is a module that is currently under the [MIT](https://en.wikipedia.org/wiki/MIT_License) license, see the [license](https://github.com/GitAPI-it/GitAPI.it-Nodejs/tree/main/.github/LICENSE) page for more information on how the MIT license is used here.
