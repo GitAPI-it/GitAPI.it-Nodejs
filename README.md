@@ -68,4 +68,4 @@ Contributing is welcome here! If you feel like contributing, please read our [co
 
 ## License
 
-This is a module that is currently under the [MIT](https://en.wikipedia.org/wiki/MIT_License) license, see the [license](https://github.com/GitAPI-it/GitAPI.it-Nodejs/tree/main/.github/LICENSE.md) page for more information on how the MIT license is used here.
+This is a module that is currently under the [MIT](https://en.wikipedia.org/wiki/MIT_License) license, see the [license](https://github.com/GitAPI-it/GitAPI.it-Nodejs/tree/main/LICENSE.md) page for more information on how the MIT license is used here.
