@@ -6,7 +6,7 @@
   "module": "./dict/mjs/gitapi-it.mjs",
   "dependencies": {
     "axios": "^0.21.1",
-    "chalk": "^4.1.2",
+    "chalk": "^5.0.1",
     "github-emoji": "^1.2.0",
     "node-fetch": "^2.6.1"
   },
