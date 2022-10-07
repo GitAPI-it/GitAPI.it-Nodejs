@@ -5,7 +5,7 @@
   "main": "./dist/cjs/gitapi-it.cjs",
   "module": "./dict/mjs/gitapi-it.mjs",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^1.1.2",
     "chalk": "^4.1.2",
     "github-emoji": "^1.2.0",
     "node-fetch": "^2.6.1"
